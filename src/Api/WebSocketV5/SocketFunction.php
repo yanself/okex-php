@@ -67,7 +67,7 @@ trait SocketFunction
 
         if(isset($this->config['log'])){
             if(is_array($this->config['log']) && isset($this->config['log']['filename'])){
-                $filename=$this->config['log']['filename'].'-'.date('Y-m-d',$time).'.txt';
+                $filename=$this->config['log']['filename'].date('Y-m-d',$time).'.txt';
             }else{
                 $filename=date('Y-m-d',$time).'.txt';
             }
