@@ -59,7 +59,7 @@ class SocketClient
     public function subscribe(array $sub=[]){
         $add_sub=$this->get('add_sub');
         if(empty($add_sub)) $this->save('add_sub',$this->resub($sub));
-        else $this->save('add_sub',array_merge($this->resub($sub),$add_sub));
+        else $this->save('add_sub',array_unique(array_merge($this->resub($sub),$add_sub)));
     }
 
     /**

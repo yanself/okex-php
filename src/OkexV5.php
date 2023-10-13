@@ -70,6 +70,13 @@ class OkexV5
     /**
      *
      * */
+    public function copytrading(){
+        return new Copytrading($this->init());
+    }
+
+    /**
+     *
+     * */
     public function market(){
         return new Market($this->init());
     }
