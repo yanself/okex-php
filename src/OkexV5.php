@@ -7,6 +7,7 @@ namespace Lin\Okex;
 
 use Lin\Okex\Api\OkexV5\Account;
 use Lin\Okex\Api\OkexV5\Asset;
+use Lin\Okex\Api\OkexV5\Copytrading;
 use Lin\Okex\Api\OkexV5\Market;
 use Lin\Okex\Api\OkexV5\Publics;
 use Lin\Okex\Api\OkexV5\SubAccount;
